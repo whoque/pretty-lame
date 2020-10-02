@@ -1,0 +1,33 @@
+[debug] [2020-10-02T11:14:53.907Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T11:14:53.911Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\wasim.hoque\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-02T11:14:53.912Z] CLI Version:   8.10.0
+[debug] [2020-10-02T11:14:53.912Z] Platform:      win32
+[debug] [2020-10-02T11:14:53.912Z] Node Version:  v13.13.0
+[debug] [2020-10-02T11:14:53.913Z] Time:          Fri Oct 02 2020 16:44:53 GMT+0530 (India Standard Time)
+[debug] [2020-10-02T11:14:53.913Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T11:14:53.913Z] 
+[debug] [2020-10-02T11:14:53.939Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-02T11:14:53.941Z] > authorizing via signed-in user
+[debug] [2020-10-02T11:14:53.942Z] [iam] checking project pretty-lame for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-02T11:14:53.946Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pretty-lame:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-02T11:14:55.447Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 11:16:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1362","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-02T11:14:55.449Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pretty-lame  
+ 
+[debug] [2020-10-02T11:14:55.859Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 11:16:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'pretty-lame'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-02T11:14:55.872Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pretty-lame/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-02T11:14:57.795Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 11:16:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[pretty-lame]: beginning deploy... 
+[info] i  hosting[pretty-lame]: found 18 files in build 
+[debug] [2020-10-02T11:14:57.945Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-10-02T11:14:57.945Z] [hosting][hash queue][FINAL] {"max":107,"min":10,"avg":25.555555555555557,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":120}
+[debug] [2020-10-02T11:14:57.945Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pretty-lame/versions/e199f81d486bd736:populateFiles  
+ <request body omitted>
+[debug] [2020-10-02T11:14:59.794Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 11:16:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-02T11:14:59.802Z] [hosting][populate queue][FINAL] {"max":1854,"min":1854,"avg":1854,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1861}
+[debug] [2020-10-02T11:14:59.802Z] [hosting] uploads queued: 6
