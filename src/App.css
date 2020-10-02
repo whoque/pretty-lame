@@ -12,22 +12,22 @@
 }
 .newJoke {
   position: fixed;
-  bottom: 10%;
+  bottom: 7%;
   left: 50%;
-  width: 100px;
-  margin-left: -50px;
+  width: 120px;
+  margin-left: -60px;
   border: 0;
-  height: 40px;
+  height: 50px;
   border-radius: 10px;
-  background: #7089a5;
+  background: #758da8;
   color: white;
   font-size: 16px;
   outline: 0;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   cursor: pointer;
 }
 .newJoke:active {
-  bottom: 9%;
+  bottom: 6%;
 }
 
 /* Media Queries */

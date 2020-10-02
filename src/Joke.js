@@ -31,7 +31,7 @@ const Joke = () => {
     <div>
       <div className="joke">{joke}</div>
       <button className="newJoke" onClick={getJoke}>
-        New
+        One more
       </button>
     </div>
   );
